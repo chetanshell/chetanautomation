@@ -2,7 +2,7 @@ import boto3
 import os
 from datetime import datetime, timedelta
 
-os.environ['AWS_PROFILE'] = "prodaws"
+os.environ['AWS_PROFILE'] = "aws"
 os.environ['AWS_DEFAULT_REGION'] = "eu-west-1"
 
 cw = boto3.client('cloudwatch',region_name='eu-west-1')
