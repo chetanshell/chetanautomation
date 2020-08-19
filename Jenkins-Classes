@@ -1,0 +1,16 @@
+Class-1
+Jenkins Installation & Configuration
+
+yum install java-1.8.0-openjdk
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+cd /etc/yum.repos.d/
+curl -O https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+systemctl start jenkins
+systemctl status jenkins
+
+/var/lib/jenkins - Home directory
+/var/lib/jenkins/jobs - All Jobs are stored here
+/var/lib/jenkins/workspace - builds your project, it contains the source code Jenkins checks out
+
+Jenkins & Github integration
