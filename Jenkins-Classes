@@ -14,3 +14,19 @@ systemctl status jenkins
 /var/lib/jenkins/workspace - builds your project, it contains the source code Jenkins checks out
 
 Jenkins & Github integration
+
+
+
+Jenkins Master and Slave configuration
+
+Launch two instance
+	Master & Slave machine
+Go to Manage Jenkins
+	Manage node
+	New node -> Node name = Slave1
+	Enable "Permanent Agent"
+Pre-requisties -> Install Java on Slave node
+
+Ensure password less authentication between Master and slave node
+
+Authenticate Slave node using SSH private key
